@@ -3,7 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>My Portfolio</title>
   </head>
-  <body></body>
+
+
+<body >
+
+<!-- Nav Bar start -->
+<nav class="w-11/12 md:w-9/12 mx-auto border-2 border-green-900 rounded-b-lg px-6 py-4 flex justify-between items-center bg-green-900 mb-8 flex-col sm:flex-row">
+<div class = "tracking-wide test-2xl font-bold text-white">
+  Portfolio
+</div>
+    <ul class="flex space-x-6">
+        <li >
+          <a href="index.html" class = "hover:text-green-400 transition text-white">Home</a>
+        </li>
+        <li >
+          <a href=" Favorites.html" class = "hover:text-green-400 transition text-white">Favorites</a>
+        </li>
+        <li >
+          <a href="Gallery.html" class = "hover:text-green-400 transition text-white">Gallery</a>
+        </li>
+        <li >
+          <a href="Contact.html" class = "hover:text-green-400 transition text-white">Contact</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Nav bar Stop -->
+
+<div class="flex justify-content-center align-items-center mx-auto gap-3 max-width: 700px"  >
+  <!-- แบ่งpart by row -->
+      <div class="rounded-xl w-10/12 mx-auto border-2 border-green-900  px-8 py-12 bg-white flex flex-col md:flex-row items-center gap-10">
+      
+        <img src="Pics/mypic.jpg" class="rounded-full w-50 h-50 object-cover" >
+        <!-- collum มาครอบ row -->
+          <div class="flex flex-col space-y-4 w-full">  
+          <div class="display-5 mb-3 font-bold">Jarkrasri Thonglueng</div>
+          <div class="text-muted">
+          Hi, my name is Chayanin. I graduated from Chiangmai University.
+          Studied Computer Engineering. Love movies, musics, books and sleeping
+        </div>
+      </div>       
+      </div>
+      </div>
+
+
+
+
+
+      <p class = "text-center  py-10 font-bold text-2xl" >Skills</p>
+
+<!-- Skill Boxxxx -->
+
+      <div class="max-w-[700px] mx-auto px-3 space-y-4">
+      <div class="flex border mb-3 shadow-sm  rounded-xl">
+        <div class=" hidden sm:block shrink-0">
+          <img src="Pics/code.jpg" class="w-[150px] h-[150px] object-cover rounded-l-lg">
+        </div>
+        <div class="p-4">
+          <p class="font-semibold text-xl">Programming</p>
+          <span class="text-muted">
+            ผมเขียน Python และ C++ ได้นิดหน่อย และเชี่ยวชาญ eV3G เป็น block code สำหรับหุ่นยนต์เลโก้
+          </span>
+        </div>
+      </div>
+
+      <div class="flex border mb-3 shadow-sm  rounded-xl">
+        <div class="p-4 grow">
+          <p class="font-semibold text-xl">Image Processing</p>
+          <span class="text-muted">
+            ผมเคยมีประสบการณ์ใช้ YOLO ตรวจจับพวกผลผลิตทางการเกษตร จำแนกป้ายจราจรเบื้องต้น การปรับภาพให้ได้เฉพาะวัตถุที่ต้องการ
+          </span>
+        </div>
+        <div class=" hidden sm:block shrink-0">
+          <img src="Pics/image_pro.jpg" class="w-[150px] h-[150px] object-cover rounded-r-lg">
+        </div>
+      </div>
+
+      <div class="flex border mb-3 shadow-sm  rounded-xl p-0.4 gap-8">
+        <div class=" hidden sm:block shrink-0">
+          <img src="Pics/3d_d&p.jpg" class="hidden sm:block w-[150px] h-full object-cover shrink-0 rounded-l-lg">
+        </div>
+        <div class="p-4">
+          <p class="font-semibold text-xl">3D design and printing</p>
+          <span class="text-muted">
+            ผมสามารถขึ้นชิ้นงาน สามมิติผ่านโปรแกรม ออกแบบชิ้นส่วนสำหรับงานเล็กๆได้
+            และ ปรับจูนเครื่องปริ้น หรือ วัสดุให้เหมาะกับ งานที่เราจะนำไปใช้สำหรับชิ้นงานนั้นๆ
+          </span>
+        </div>
+      </div>
+
+
+
+      <div class="flex border mb-3 shadow-sm  rounded-xl">
+        <div class="p-4 grow">
+          <p class="font-semibold text-xl">Control System</p>
+          <span class="text-muted">
+            ในตลอดการแข่งขันหุ่นยนต์ ที่เคยประสบมา ผมได้นำการประยุกต์ใช้ระบบวัดคุมเข้ามาเป็นตัวช่วยในการควบคุมหุ่นยนต์ให้มีเสถียรภาพมากขึ้น
+            เช่น การเดินตามเส้น การเลี้ยวโค้งด้วย [Gyro Sensor] การวิ่งขนานกับกำแพงโดยใช้ [Ultrasonic Sensor] หรือแม้กระทั่งการเคลื่อนที่แบบ synchronize 
+            และการควบคุมแขนกลสำหรับหนีบจับวัตถุด้วยความแม่นยำ
+          </span>
+        </div>
+        <div class="my-rounded-right hidden sm:block shrink-0">
+          <img src="Pics/control.png" class="w-[150px]  h-full object-cover rounded-r-lg">
+        </div>
+      </div>
+
+    </div>
+
+
+
+      <p class="text-center text-muted m-4">© 2025 Jarkrasri.com by Jarkrasri Thonglueng</p>
+
+  </body>
 </html>
